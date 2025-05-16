@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miportafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="e0408eb5f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+            <nav>
+                <img src="imagen/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">Sobre Mi</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <i class="fa-solid fa-xmark" onclick="cerrarmenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="abrirmenu()"></i>
+            </nav>
+            
+            <section id="Home">
+                <div class="text-container animate-on-scroll">
+                    <span>Hola Soy, </span>
+                    <h1>Edgar Romero Cuc</h1>
+                    <p>Mi pasión por la programación web y mi conjunto de habilidades en JavaScript, CSS, ReactJS, MongoDB y Node.js me impulsan a crear soluciones web que sean atractivas, funcionales y efectivas</p>
+                    <a href="https://wa.me/50245984577"
+                    target="_blank"
+                    class="btn"
+                    >Contáctame</a>
+                </div>
+                <div class="image-container animate-on-scroll">
+                    <div class="home-avatar-box">
+                         
+                        <img src="imagen/foto1.png" alt="Foto" class="foto">
+                    
+                    </div>
+                 
+                </div>
+                <div class="bottom-ani dark-text-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 40" preserveAspectRatio="none">
+                        <path fill="#001e35" d="">
+                            <animate attributeName="d" begin="0s" dur="10s" repeatCount="indefinite" values="
+                          M0,0 C200,7.11236625e-15 200,40 400,40 C600,40 800,0 1000,0 L1000,50 L0,50 L0,0 Z;
+                          M0,40 C200,40 400,0 600,0 C800,0 800,40 1000,40 L1000,50 L0,50 L0,40 Z;
+                          M0,30 C200,30 200,0 400,0 C600,0 800,40 1000,40 L1000,50 L0,50 L0,30 Z;
+                          M0,0 C200,7.11236625e-15 200,40 400,40 C600,40 800,0 1000,0 L1000,50 L0,50 L0,0 Z;"></animate>
+                        </path>
+                    </svg>
+                </div>
+            </section>
+
+
+    <section id="about">
+        <div class="container animate-on-scroll">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="imagen/foto2.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Sobre Mí</h1>
+                    <p> Mi pasión por la programación web y mi conjunto de habilidades 
+                        en JavaScript, CSS, ReactJS, MongoDB y Node.js 
+                        me impulsan a crear soluciones web que sean atractivas,
+                        funcionales y efectivas. 
+                        ¡Estoy emocionado por seguir 
+                        explorando este emocionante campo 
+                        y llevar ideas innovadoras a la vida digital.</p>
+
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('habilidades')">Habilidades</p>
+                            <p class="tab-links" onclick="opentab('experiencia')">Experiencia</p>
+                            <p class="tab-links" onclick="opentab('educacion')">Educación</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="habilidades">
+                            <ul>
+                                <li><span>Frontend</span> <br> Desarrollo de interfaces de usuario (UI) utilizando HTML, CSS y JavaScript. Especializado en diseño de experiencias atractivas y responsivas.</li>
+                                <li><span>Frontend</span> <br> Desarrollo de aplicaciones web utilizando React.js para construir interfaces interactivas y dinámicas.</li>
+                                <li><span>Backend</span> <br> Desarrollo de servidores y lógica de negocio utilizando Node.js, garantizando la robustez y eficiencia del lado del servidor.</li>
+                                <li><span>Base de Datos</span> <br> Experiencia en diseño y gestión de bases de datos MongoDB, asegurando un almacenamiento eficiente y escalable de datos.</li>
+                                <li><span>Desarrollo Full Stack</span> <br> Integración de frontend y backend para crear aplicaciones web completas y funcionales.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experiencia">
+                            <ul>
+                                <li><span>Desarrollo de Interfaces</span> <br> Diseño y desarrollo de interfaces web/aplicaciones para una farmacia. Me especialicé en crear experiencias de usuario intuitivas y atractivas que mejoraron la interacción del cliente con la plataforma.</li>
+                                <li><span>Desarrollo de Aplicaciones Web</span> <br> Lideré el desarrollo de aplicaciones web para una farmacia, utilizando tecnologías como HTML, CSS, JavaScript, React.js, Node.js y MongoDB. Esto incluyó la implementación de funcionalidades clave, como gestión de inventario, búsqueda de productos y procesamiento de pedidos.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="educacion">
+                            <ul>
+                                <li><span>Certificado de JavaScript Básico</span> <br> Sololearn</li>
+                                <li><span>Curso de ReactJS, MongoDB, Node.js</span> <br> LevelUp | Diciembre 2022 - Marzo 2023</li>
+                                <li><span>Certificado de JavaScript Intermedio</span> <br> Sololearn</li>
+                                <li><span>Certificado de ReactJS</span> <br> Sololearn</li>
+                                <li><span>Certificado de SQL</span> <br> Sololearn</li>
+                                <li><span>Certificado de ReactJS Avanzado</span> <br> Hackerrank</li>
+                                <li><span>Curso de JavaScript Básico</span> <br> Platzi | Año 2022</li>
+                            </ul>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+        <!-----------------seccion de servicios---------------------->
+       
+        <section id="servicios">
+            <div class="container animate-on-scroll">
+                <h1 class="sub-title">Mis Servicios</h1>
+                <div class="servicios-list">
+                    <div class="servicio-box">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Desarrollo Web</h2>
+                        <p>
+                            Ofrezco servicios de desarrollo web para crear sitios web modernos y funcionales. Utilizo las últimas tecnologías y prácticas de desarrollo para construir soluciones adaptadas a las necesidades de mis clientes, incluyendo HTML, CSS y JavaScript.
+                        </p>
+                    </div>
+                    <div class="servicio-box">
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>Diseño UI/UX</h2>
+                        <p>
+                            Me especializo en diseño de interfaz de usuario (UI) y experiencia de usuario (UX). Creo diseños atractivos y fáciles de usar que mejoran la interacción entre los usuarios y las aplicaciones.
+                        </p>
+                    </div>
+                    <div class="servicio-box">
+                        <i class="fa-brands fa-react"></i>
+                        <h2>Aplicaciones Web</h2>
+                        <p>
+                            Desarrollo aplicaciones web personalizadas utilizando ReactJS para garantizar una experiencia de usuario fluida y dinámica.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-----------------seccion de servicios---------------------->
+                <section id="portafolio">
+                    <div class="container animate-on-scroll">
+                        <h1 class="sub-title">Mis Trabajos</h1>
+                        <div class="work-list">
+                            <div class="work">
+                                <img src="imagen/plataforma.png" alt="Lista de tareas">
+                                <div class="layer">
+                                    <h3>Plataforma</h3>
+                                    <p>Aplicación web para reproducir videos de cursos y mostrar plantillas de portafolios, ecommerce y apps. Desarrollada con React, TailwindCSS y Node.js.</p>
+                                    <a href="https://edukukgt.vercel.app" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                
+                            <div class="work">
+                                <img src="imagen/clima.jfif" alt="App para Clima">
+                                <div class="layer">
+                                    <h3>App para Clima</h3>
+                                    <p>Clima es una aplicación web que proporciona a los usuarios información en tiempo real sobre las condiciones climáticas. La aplicación utiliza una API de clima para obtener datos actualizados y mostrarlos de manera fácil de entender.</p>
+                                    <a href="https://gilded-croquembouche-8e711e.netlify.app" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                
+                            <div class="work">
+                                <img src="imagen/kuk.png" alt="Tienda en Línea">
+                                <div class="layer">
+                                    <h3>Tienda en Línea</h3>
+                                    <p>Es una plataforma web diseñada para proporcionar a los usuarios una experiencia de compra intuitiva y eficiente. </p>
+                                    <a href="https://multiservicios-kuk-1.vercel.app" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+     <!-----------------seccion de contacto---------------------->
+     <section id="contacto">
+        <div class="container animate-on-scroll">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contáctame</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>edgarromerocuc94@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+50245984577</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                        
+                    </div>
+                    <a class="btn btn2" 
+                    href="CV-ED.pdf" 
+                    target="_blank" >Ver CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form onsubmit="enviarWhatsApp(event)">
+                        <input type="text" id="name" placeholder="Tu nombre" required>
+                        <input type="email" id="email" placeholder="Tu correo">
+                        <textarea id="mensaje" rows="6" placeholder="Tu mensaje"></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <div class="copyright animate-on-scroll" id="yearCopyright">
+            
+            <p>&copy; <span id="currentYear"></span> Edgar Romero Cuc Chocoj <i class="fa-solid fa-heart"></i>- Portafolio</p>
+           
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
